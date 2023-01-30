@@ -68,12 +68,14 @@
             this.calcularPagoToolStripMenuItem.Name = "calcularPagoToolStripMenuItem";
             this.calcularPagoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.calcularPagoToolStripMenuItem.Text = "Calcular pago";
+            this.calcularPagoToolStripMenuItem.Click += new System.EventHandler(this.calcularPagoToolStripMenuItem_Click);
             // 
             // solicitudPrestamoToolStripMenuItem
             // 
             this.solicitudPrestamoToolStripMenuItem.Name = "solicitudPrestamoToolStripMenuItem";
             this.solicitudPrestamoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.solicitudPrestamoToolStripMenuItem.Text = "Solicitud prestamo";
+            this.solicitudPrestamoToolStripMenuItem.Click += new System.EventHandler(this.solicitudPrestamoToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
