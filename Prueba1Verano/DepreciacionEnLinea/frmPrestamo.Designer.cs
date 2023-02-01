@@ -32,19 +32,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cboTipoIngreso = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.mtxtIngreso = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtIngresoP = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.mtxtEgreso = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtEgresoP = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.mtxtMontoRequerido = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cboPlazo = new System.Windows.Forms.ComboBox();
-            this.txtCuota = new System.Windows.Forms.TextBox();
+            this.txtCuotaP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -86,13 +87,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Ingresos";
             // 
-            // mtxtIngreso
+            // mtxtIngresoP
             // 
-            this.mtxtIngreso.Location = new System.Drawing.Point(134, 171);
-            this.mtxtIngreso.Mask = "00000000000000";
-            this.mtxtIngreso.Name = "mtxtIngreso";
-            this.mtxtIngreso.Size = new System.Drawing.Size(100, 23);
-            this.mtxtIngreso.TabIndex = 5;
+            this.mtxtIngresoP.Location = new System.Drawing.Point(134, 171);
+            this.mtxtIngresoP.Mask = "00000000000000";
+            this.mtxtIngresoP.Name = "mtxtIngresoP";
+            this.mtxtIngresoP.Size = new System.Drawing.Size(100, 23);
+            this.mtxtIngresoP.TabIndex = 5;
             // 
             // label4
             // 
@@ -103,13 +104,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Egresos";
             // 
-            // mtxtEgreso
+            // mtxtEgresoP
             // 
-            this.mtxtEgreso.Location = new System.Drawing.Point(134, 227);
-            this.mtxtEgreso.Mask = "0000000000000";
-            this.mtxtEgreso.Name = "mtxtEgreso";
-            this.mtxtEgreso.Size = new System.Drawing.Size(100, 23);
-            this.mtxtEgreso.TabIndex = 7;
+            this.mtxtEgresoP.Location = new System.Drawing.Point(134, 227);
+            this.mtxtEgresoP.Mask = "0000000000000";
+            this.mtxtEgresoP.Name = "mtxtEgresoP";
+            this.mtxtEgresoP.Size = new System.Drawing.Size(100, 23);
+            this.mtxtEgresoP.TabIndex = 7;
             // 
             // label5
             // 
@@ -133,31 +134,31 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(24, 345);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 15);
+            this.label6.Size = new System.Drawing.Size(79, 15);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Plazo";
+            this.label6.Text = "Plazo (meses)";
             // 
             // cboPlazo
             // 
             this.cboPlazo.FormattingEnabled = true;
             this.cboPlazo.Items.AddRange(new object[] {
-            "6 meses",
-            "9 meses",
-            "12 meses",
-            "18 meses",
-            "24 meses",
-            "36 meses"});
+            "6",
+            "9",
+            "12",
+            "18",
+            "24",
+            "36"});
             this.cboPlazo.Location = new System.Drawing.Point(134, 342);
             this.cboPlazo.Name = "cboPlazo";
             this.cboPlazo.Size = new System.Drawing.Size(121, 23);
             this.cboPlazo.TabIndex = 11;
             // 
-            // txtCuota
+            // txtCuotaP
             // 
-            this.txtCuota.Location = new System.Drawing.Point(134, 398);
-            this.txtCuota.Name = "txtCuota";
-            this.txtCuota.Size = new System.Drawing.Size(100, 23);
-            this.txtCuota.TabIndex = 12;
+            this.txtCuotaP.Location = new System.Drawing.Point(134, 398);
+            this.txtCuotaP.Name = "txtCuotaP";
+            this.txtCuotaP.Size = new System.Drawing.Size(100, 23);
+            this.txtCuotaP.TabIndex = 12;
             // 
             // label7
             // 
@@ -204,24 +205,32 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 17;
             // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(251, 398);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(134, 23);
+            this.txtEstado.TabIndex = 18;
+            // 
             // frmPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 513);
+            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtCuota);
+            this.Controls.Add(this.txtCuotaP);
             this.Controls.Add(this.cboPlazo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.mtxtMontoRequerido);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.mtxtEgreso);
+            this.Controls.Add(this.mtxtEgresoP);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.mtxtIngreso);
+            this.Controls.Add(this.mtxtIngresoP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboTipoIngreso);
             this.Controls.Add(this.label2);
@@ -240,18 +249,19 @@
         private Label label2;
         private ComboBox cboTipoIngreso;
         private Label label3;
-        private MaskedTextBox mtxtIngreso;
+        private MaskedTextBox mtxtIngresoP;
         private Label label4;
-        private MaskedTextBox mtxtEgreso;
+        private MaskedTextBox mtxtEgresoP;
         private Label label5;
         private MaskedTextBox mtxtMontoRequerido;
         private Label label6;
         private ComboBox cboPlazo;
-        private TextBox txtCuota;
+        private TextBox txtCuotaP;
         private Label label7;
         private Button btnCalcular;
         private Button btnLimpiar;
         private Label label8;
         private TextBox txtNombre;
+        private TextBox txtEstado;
     }
 }

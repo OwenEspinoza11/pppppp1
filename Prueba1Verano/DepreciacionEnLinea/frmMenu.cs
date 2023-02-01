@@ -2,6 +2,9 @@ namespace DepreciacionEnLinea
 {
     public partial class frmMenu : Form
     {
+        frmDepreciacion x = new frmDepreciacion();
+        frmFormaPago y = new frmFormaPago();
+        frmPrestamo z = new frmPrestamo();
         public frmMenu()
         {
             InitializeComponent();
@@ -9,23 +12,20 @@ namespace DepreciacionEnLinea
 
         private void calcularDepreciacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDepreciacion depreciacion = new frmDepreciacion();
-            depreciacion.Show();
-            this.Hide();
+            x.MdiParent = this;
+            x.Show();
         }
 
         private void calcularPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmFormaPago formaPago = new frmFormaPago();
-            formaPago.Show();
-            this.Hide();
+            y.MdiParent = this;
+            y.Show();
         }
 
         private void solicitudPrestamoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrestamo prestamo = new frmPrestamo();
-            prestamo.Show();
-            this.Hide();
+            z.MdiParent = this;
+            z.Show();
         }
     }
 }
